@@ -5,9 +5,10 @@
 
 .main-text{
     font-size:20px;
+    text-align:justify;
 }
 .banner{
-    background-image:url("/images/banner_combine.png");
+    background-image:url("/images/banner_combine.jpg");
     height:400px;
     background-repeat: stretch;
     background-position: top;
@@ -51,17 +52,22 @@
     display:block-inline;
     float:left;
     border-left: 1px solid #fff;
-    background:$brand-color;
+    a:hover{
+        color:$brand-color2;
+    }
+    //background:$brand-color;
 
 }
 
 .header-link-wrapper:hover{
-    background-color:$brand-color2;
+
+    //background-color:$brand-color2;
 }
 .site-nav {
     font-family:'ubuntu', sans-serif;
     font-size:16px;
     float: right;
+    font-weight:bold;
     line-height: 40px;
 
     .menu-icon {
@@ -69,7 +75,8 @@
     }
 
     .page-link {
-        color: #fff;
+        color: $brand-color;
+        font-style:bold;
         line-height: $base-line-height;
 
         // Gaps between nav items, but not on the first one

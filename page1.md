@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Page 1
+title: Install
 permalink: /page1/
 ---
 

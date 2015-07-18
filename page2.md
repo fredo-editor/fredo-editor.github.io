@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Page 2
+title: Examples
 permalink: /page2/
 ---
 
