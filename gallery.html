@@ -4,14 +4,103 @@ title: Gallery
 permalink: /gallery/
 ---
 
-<div class="">
+<div class="gallery-text">
     <h1>Gallery</h1>
     <h3>
         A lot of defects can be effectively visualized and corrected in the frequency domain.
         This gallery explores a couple of them.
-        In all examples the image on the left is the original and its corrected version on the
-        right.
+        In all examples the image on the left is sptial domain image and the image on
+        the right is the magnitude of its Fourier Transform. They were obtained using the
+        <b> Save Image &amp; Transform </b> command.
 
     </h3>
     <h2> Coherent Noise </h2>
+    <h3>
+        Coherent Noise causes periodically repeating defects in the image. This can be
+        caused by elecrical equipment interfering with the camera sensors. These photographs
+        were captured by <a href="https://landsat.usgs.gov/science_L7_cpf.php"> Lansat 7
+        ETM+ </a>. More information can be found on Landsat's page on <a href="http://landsat.usgs.gov/science_an_cn.php" >
+        Coherent Noise </a>. Similar images can be found using <a href="http://earthexplorer.usgs.gov/" >
+        Earth Explorer</a> and selecting the <b> L7 ETM+ SLC-off </b> data set.
+    </h3>
+    <div class="caption"> <h4>
+        Original Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex1_in.jpg" />
+    <div class="caption"> <h5>
+        The image exhibits a grid of black dots littered over majority of its area.
+        The noise is manifested into the frequency domain by extra(except the centre) sharp peaks in the
+        frequency domain.
+    </h5></div>
+
+    <div class="caption"> <h4>
+        Corrected Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex1_out.jpg" />
+    <div class="caption"> <h5>
+        The stray peaks have been eliminated by zeroing them out. The recurring grid
+        of black dots in the image is visibly reduces.
+    </h5></div>
+
+    <div class="caption"> <h4>
+        Original Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex2_in.jpg" />
+    <div class="caption"> <h5>
+        The image exhibits a similar defect as the last image. Notice the similarity
+        in the placement of peaks in the frequency domain. This points towards
+        the same source contributing to noise in both the images.
+    </h5></div>
+
+    <div class="caption"> <h4>
+        Corrected Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex2_out.jpg" />
+    <div class="caption"> <h5>
+        Image corrected by zeroing out stray peaks.
+    </h5></div>
+
+    <h2> Moiré Pattern </h2>
+    <a href="https://en.wikipedia.org/wiki/Moir%C3%A9_pattern">Moiré Patterns</a>
+    are observed in a variety of places, on of them is on printed media. It is usually
+    the result of haltone screens of insufficient density used during printing.
+    The following 2 examples, attempt to correct Moiré patterns seen in scanned photographs.
+
+    <div class="caption"> <h4>
+        Original Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex3_in.jpg" />
+    <div class="caption"> <h5>
+        The Moiré pattern on the image is clearly visible. The corresponding artifacts
+        on the frequency domain image are the peaks observed in a circle around
+        the centre.
+    </h5></div>
+
+    <div class="caption"> <h4>
+        Corrected Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex3_out.jpg" />
+    <div class="caption"> <h5>
+        Zeroing out the peaks visibly reduces the Moiré pattern. This could also
+        be achieved with a band reject filter.
+    </h5></div>
+
+    <div class="caption"> <h4>
+        Original Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex4_in.jpg" />
+    <div class="caption"> <h5>
+        The Moiré pattern is evident on the face of the cartoon. Since the image
+        was scanned from the same magazine as the last one, the position of peaks
+        in the frequncy domain is similar
+    </h5></div>
+
+    <div class="caption"> <h4>
+        Corrected Image
+    </h4></div>
+    <img class="img-centre" src="/images/ex4_out.jpg" />
+    <div class="caption"> <h5>
+        Correction is done in a similar manner as the last image.
+    </h5></div>
+
 </div>

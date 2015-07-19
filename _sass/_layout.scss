@@ -2,6 +2,8 @@
  * Site header
  */
 
+$bwidth:200px;
+$bmargin:20px;
 #bbox{
     a {
         color: $brand-color;
@@ -18,12 +20,24 @@
     a:hover{
         text-decoration: none;
     }
+}
 
+.img-centre{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
 
+.caption{
+    text-align:center;
+    max-width:800px;
+    //width:800px;
+    margin-left:auto;
+    margin-right:auto;
 }
 .bold-button{
     color:#fff;
-    width:200px;
+    width:$bwidth;
     height:80px;
     display: inline-block;
 
@@ -37,19 +51,24 @@
     &:hover{
         background-color:$brand-color2;
     }
-    margin:20px;
+    margin:$bmargin;
 
 
 }
 
 .button-box{
-    margin:50px;
-    width:600px;
+    margin-top:50px;
+    width:3*$bwidth + 6*$bmargin + 10px;
+
     margin-left:auto;
     margin-right:auto;
 }
 .main-text{
     font-size:20px;
+    text-align:justify;
+}
+
+.gallery-text{
     text-align:justify;
 }
 .banner{
