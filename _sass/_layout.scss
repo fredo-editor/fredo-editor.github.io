@@ -2,7 +2,52 @@
  * Site header
  */
 
+#bbox{
+    a {
+        color: $brand-color;
+        text-decoration: none;
 
+        &:visited {
+            color: $brand-color;
+        }
+
+        &:hover {
+
+        }
+    }
+    a:hover{
+        text-decoration: none;
+    }
+
+
+}
+.bold-button{
+    color:#fff;
+    width:200px;
+    height:80px;
+    display: inline-block;
+
+    line-height:80px;
+    text-align:center;
+    font-size:30px;
+    background-color:$brand-color;
+    -webkit-transition: background-color .5s; /* Safari */
+    transition: background-color .5s;
+    border-radius: 5px;
+    &:hover{
+        background-color:$brand-color2;
+    }
+    margin:20px;
+
+
+}
+
+.button-box{
+    margin:50px;
+    width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
 .main-text{
     font-size:20px;
     text-align:justify;
@@ -83,6 +128,8 @@
         &:not(:first-child) {
             margin-left: 20px;
         }
+
+
         padding:10px;
     }
 
