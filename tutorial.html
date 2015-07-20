@@ -1,0 +1,85 @@
+---
+layout: default
+title: Tutorial
+permalink: /tutorial/
+---
+
+<div class="gallery-text">
+    <h1> Demo Video</h1>
+    <p>The video goes through a typical usage scenario using Fredo-Editor. <br/> </p>
+    <video width="100%"  controls>
+        <source src="/images/record.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <p><br/></p>
+    <h1> Walkthrough </h1>
+
+    <h2> Launch </h2>
+    <p>Start Fredo Editor with the <code> fredo </code> command in your shell.</p>
+
+    <h2> Opening an Image </h2>
+    <p>Select the <code> File > Open</code> menu to load an image. Currently
+    <b>.jpg</b>, <b>.bmp</b>, <b>.png</b> formats are supported.</p>
+
+    <img src="/images/tutorial/open.jpg" class="img-centre"  />
+
+    <h2> View </h2>
+    <img src="/images/tutorial/view.jpg" class="img-centre"  />
+    <br/>
+    <p>Opening an image displays it and its 2D Fourier Transform. The transform
+     is shifted such that the highest frequency component is at the centre.
+     To compute the the fourier transform, the image is first internally converted
+     into the <b>YUV</b> color space. In the <b>YUV</b> space, the <b>Y</b>
+     component represents the intensity and is used to compute the Fourier Tranform.
+     Since the result of the Fourier transform is complex, only its magnitude is
+     visualized on the right hand side. Within the magnitude, the peaks
+     are several times grater than the rest of values. To effectively visualize it,
+     we plot the <b>log</b> of the magnitude, instead of the magnitude itself.
+     </p>
+
+     <h2> Brush </h2>
+     <p> Selecting the <code> Edit > Brush </code> menu opens the configuration options
+     for a brush.</p>
+     <img src="/images/tutorial/edit.jpg" class="img-centre"  />
+     <br/>
+     <p>Currently only a <b>Square Brush</b> is supported.</p>
+     <img src="/images/tutorial/brush.jpg" class="img-centre"  />
+     <br/>
+     <p> The size slider allows the user to change the width of the brush and each change
+         is immediately reflected in the preview section. The <b>Value</b> spinbox
+         modifies the value of the brush. It means that, on a click, the brush will
+         update all pixels in the frequency domain image contained within it to
+         the selected value.
+     </p>
+
+    <h2> Editing </h2>
+    <img src="/images/tutorial/fft.jpg" class="img-centre"  />
+    <br/>
+    <p>After selecting a brush, hovering over the frequency domain image generates
+    a green preview of it. In addition to the mouse position (top-left) a secondary
+    preview is shown in the diagonally opposite (bottom-right) quadrant. This
+    is because, the Fourier transform of real images is symmetric about the centre.
+    To maintain the same consistency, the brush also performs symmetric edits.
+    Clicking on the frequency domain image with the brush applies it, and the
+    spatial domain image immediately reflects the change. When a brush is applied
+    only the magnitude of the fourier transform is affected, the phase remains the
+    same. Since the fourier transform was derived from the <b>Y</b> component of
+    the image, it is the only component affected. This means that only the intensity(Y)
+    of pixels will change, the colour(U and V) will remain the same.
+    </p>
+
+    <h2>Saving </h2>
+    <p>The only <b>.png</b> format is supported for saving images.
+    The <code> File > Save Image </code> option will save only the modified
+    spttial domain image.</p>
+    <img src="/images/tutorial/save.jpg" class="img-centre"  />
+    <br/>
+    <img src="/images/tutorial/out.jpg" class="img-centre"  />
+    <br/>
+    <p>The <code> File > Save Image & Transform </code> option will save the spatial
+    and frequency domain images side-by-side.</p>
+    <img src="/images/tutorial/save_both.jpg" class="img-centre"  />
+    <br/>
+    <img src="/images/tutorial/out_both.jpg" class="img-centre"  />
+    <br/>
+</div>

@@ -5,7 +5,7 @@ $brand-color2 :#eb6d19;
 
 @font-face {
   font-family: 'ubuntu';
-  src: url('fonts/ubuntu_r.ttf');
+  src: url('/fonts/ubuntu_r.ttf');
 }
 
-$base-font-family:'ubuntu';
+$base-font-family:'ubuntu', Sans-Serif;
