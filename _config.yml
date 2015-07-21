@@ -1,6 +1,6 @@
 # Site settings
 title: FreDo Editor
-email: your-email@domain.com
+email: vighneshbirodkar@nyu.edu
 description: A free, open-source frequency domain image editor.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
