@@ -4,7 +4,7 @@ email: vighneshbirodkar@nyu.edu
 description: A free, open-source frequency domain image editor.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
+#twitter_username: jekyllrb
 github_username:  fredo-editor
 
 # Build settings
