@@ -6,7 +6,7 @@ permalink: /about/
 
 ## What is FreDo ?
 FreDo-Editor (**Fre**quency **Do**main Editor) is an application to edit images in their frequency domain. It
-transforms images into frequency domain with the 2D
+transforms images into the frequency domain with the 2D
 [DFT](https://en.wikipedia.org/wiki/Discrete_Fourier_transform), allows modifications
 in the frequency domain and gets the image back by using the inverse transform.
 Just like MS-Paint, Photoshop, GIMP allow editing images (spatial domain), FreDo

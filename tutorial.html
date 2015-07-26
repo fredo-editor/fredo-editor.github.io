@@ -28,8 +28,7 @@ permalink: /tutorial/
     <br/>
     <p>Opening an image displays it and its <a href="https://en.wikipedia.org/wiki/Discrete_Fourier_transform">
         2D Discrete Fourier Transform.</a>
-        The transformhttps://en.wikipedia.org/wiki/YUV
-     is shifted such that the highest frequency component is at the centre.
+        The transform is shifted such that the highest frequency component is at the centre.
      To compute the the fourier transform, the image is first internally converted
      into the <b>YUV</b> color space. In the <a href="https://en.wikipedia.org/wiki/YUV">YUV</a>
      space, the <b>Y</b>
@@ -63,8 +62,8 @@ permalink: /tutorial/
     preview is shown in the diagonally opposite (bottom-right) quadrant. This
     is because, the Fourier transform of real images is symmetric about the centre.
     To maintain the same consistency, the brush also performs symmetric edits.
-    Clicking on the frequency domain image with the brush applies it, and the
-    spatial domain image immediately reflects the change. When a brush is applied
+    Clicking on the frequency domain image with the brush, applies it and the
+    spatial domain image immediately reflects the change. When a brush is applied,
     only the magnitude of the fourier transform is affected, the phase remains the
     same. Since the fourier transform was derived from the <b>Y</b> component of
     the image, it is the only component affected. This means that only the intensity(Y)
@@ -72,9 +71,9 @@ permalink: /tutorial/
     </p>
 
     <h2>Saving </h2>
-    <p>The only <b>.png</b> format is supported for saving images.
+    <p>Only the <b>.png</b> format is supported for saving images.
     The <code> File > Save Image </code> option will save only the modified
-    spttial domain image.</p>
+    spatial domain image.</p>
     <img src="/images/tutorial/save.jpg" class="img-centre"  />
     <br/>
     <img src="/images/tutorial/out.jpg" class="img-centre"  />
