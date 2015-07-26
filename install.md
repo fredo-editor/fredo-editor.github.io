@@ -2,7 +2,7 @@
 layout: default
 title: Install
 permalink: /install/
-fredo-link: https://dl.dropboxusercontent.com/u/74846509/fredo/FreDo-Editor-0.1.0.zip
+fredo-link: https://dl.dropboxusercontent.com/u/74846509/fredo/FreDo-Editor-0.1.0-dev.zip
 ---
 # Install
 
