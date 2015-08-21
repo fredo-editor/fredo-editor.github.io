@@ -49,10 +49,13 @@ permalink: /tutorial/
      <img src="/images/tutorial/brush.jpg" class="img-centre"  />
      <br/>
      <p> The size slider allows the user to change the width of the brush and each change
-         is immediately reflected in the preview section. The <b>Value</b> spinbox
-         modifies the value of the brush. It means that, on a click, the brush will
-         update all pixels in the frequency domain image contained within it to
-         the selected value.
+         is immediately reflected in the preview section. Since the brush modifies
+         a Fourier Tranform (which is complex), the brush has a magnitude as well as
+         angle.
+         The <b>Magnitude</b> spinbox modifies the magnitude of the brush, where as
+         the <b>Angle</b> slider adjusts its angle between 0 and 360.
+         On a click, the brush will update the value of all pixels contained
+         within it to the value specified by its magnitude and angle.
      </p>
 
     <h2> Editing </h2>
