@@ -15,7 +15,7 @@ the number 1482, in binary (10111001010) and ocatal (2712), the fourier transfor
 us a different perspective of the same data, with some very useful insights.
 
 ## How is it useful ?
-The main purpose of Fredo-Editor is to help visualize the frequency domain image
+The main purpose of Fredo-Editor is to help visualize frequency domain image
 transformations. The frequency domain is very helpful in removing periodic/coherent noise is images. It can also be used to help design frequency domain filters.
 
 ## Where do I report bugs or feature requests ?
