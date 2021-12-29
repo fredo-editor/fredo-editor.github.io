@@ -6,7 +6,9 @@ fredo-link: https://codeload.github.com/fredo-editor/FreDo/zip/refs/heads/master
 ---
 # Install
 
-Fredo-Editor needs [Python](https://www.python.org/), [Numpy](http://www.numpy.org/) and [PySide](http://pyside.readthedocs.org/en/latest/index.html) to run.
+Fredo-Editor needs [Python 2](https://www.python.org/), [Numpy](http://www.numpy.org/) and [PySide](http://pyside.readthedocs.org/en/latest/index.html) to run.
+
+**Note: Currently this program only supports Python 2. Maintainers needed to upgrade to Python 3. Contribute [here](https://github.com/fredo-editor/FreDo)**
 
 ## Windows
 
