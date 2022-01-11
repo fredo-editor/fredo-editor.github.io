@@ -2,11 +2,13 @@
 layout: default
 title: Install
 permalink: /install/
-fredo-link: https://dl.dropboxusercontent.com/u/74846509/fredo/FreDo-Editor-0.1.0-dev.zip
+fredo-link: https://codeload.github.com/fredo-editor/FreDo/zip/refs/heads/master
 ---
 # Install
 
-Fredo-Editor needs [Python](https://www.python.org/), [Numpy](http://www.numpy.org/) and [PySide](http://pyside.readthedocs.org/en/latest/index.html) to run.
+Fredo-Editor needs [Python 2](https://www.python.org/), [Numpy](http://www.numpy.org/) and [PySide](http://pyside.readthedocs.org/en/latest/index.html) to run.
+
+**Note: Currently this program only supports Python 2. Maintainers needed to upgrade to Python 3. Contribute [here](https://github.com/fredo-editor/FreDo)**
 
 ## Windows
 
@@ -16,7 +18,7 @@ you select the option to add python to the PATH variable.
 * Install [Numpy](http://sourceforge.net/projects/numpy/files/NumPy/1.9.2/numpy-1.9.2-win32-superpack-python2.7.exe/download)
 * Download [FreDo-Editor]({{ page.fredo-link }}), open Command Prompt (`cmd`) and execute.
 {% highlight bash %}
-c:\> pip install FreDo-Editor-0.1.0.zip
+c:\> pip2 install FreDo-master.zip
 c:\> fredo
 {% endhighlight %}
 
@@ -25,7 +27,7 @@ c:\> fredo
 * Download [FreDo-Editor]({{ page.fredo-link }}), open the Terminal and execute.
 {% highlight bash %}
 $ sudo apt-get install python python-numpy python-pyside
-$ sudo pip install FreDo-Editor-0.1.0.zip
+$ sudo pip2 install FreDo-master.zip
 $ fredo
 {% endhighlight %}
 
@@ -33,7 +35,7 @@ $ fredo
 * Download [FreDo-Editor]({{ page.fredo-link }})
 and execute
 {% highlight bash %}
-$ pip install FreDo-Editor-0.1.0.zip
+$ pip2 install FreDo-master.zip
 {% endhighlight %}
 Ideally <b>pip</b> should recognize and install all dependencies, provided you
 have a C-Compiler installed and pip knows how to use it. This might fail on windows,
